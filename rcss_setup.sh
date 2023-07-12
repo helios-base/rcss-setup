@@ -2,7 +2,7 @@
 
 ##############################################################################
 # rcss_setup.sh
-# instal the following softwares
+# install the following softwares
 #  * rcssserver-18.1.3
 #  * rcssmonitor-18.0.0
 #  * librcsc (rc2023 edition)
@@ -13,24 +13,7 @@
 # All rights reserved.
 # MIT Lisence
 ##############################################################################
-
-
-##########################
-# Preparation
-##########################
-#set -x
-para=6
-
-
-#############################
-# Make the ubuntu up to date
-#############################
-sudo apt update -y
-sudo apt upgrade -y
-
-##########################
 # Directory plan
-##########################
 # .
 # └── rc
 #     ├── teams
@@ -45,7 +28,23 @@ sudo apt upgrade -y
 #         ├── rcssserver-18.1.3
 #         ├── share
 #         └── soccerwindow2-rc2023
+##############################################################################
+# Confirmed to work on:
+#  * Ubuntu 22.04 on wsl2
+##############################################################################
 
+##########################
+# Preparation
+##########################
+#set -x
+para=6
+
+
+#############################
+# Make the ubuntu up to date
+#############################
+sudo apt update -y
+sudo apt upgrade -y
 
 
 mkdir rc
